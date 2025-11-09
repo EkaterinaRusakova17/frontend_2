@@ -1,0 +1,27 @@
+.share-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #070707E3;
+    display: flex;
+    align-items: flex-end;
+}
+
+.share-box__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1A17;
+    border-radius: 4px;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+
+.hidden {
+    display: none;
+}

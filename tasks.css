@@ -1,0 +1,26 @@
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasks__empty {
+    width: auto;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+    border-top: 3px solid #FF8303;
+    border-bottom: 3px solid #FF8303;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.tasks__list {
+    margin: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
