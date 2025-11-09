@@ -1,0 +1,40 @@
+.edit-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #070707E3;
+    display: flex;
+    align-items: flex-end;
+}
+
+.edit-window__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1A17;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    gap: 0.5rem;
+}
+
+.edit-window__inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.edit-window__buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hidden {
+    display: none;
+}

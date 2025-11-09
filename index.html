@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="tasks.css">
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="alert.css">
+    <link rel="stylesheet" href="edit-window.css">
+    <link rel="stylesheet" href="share-box.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <form class="form">
+        <div class="form__inputs">
+            <input class="input" type="text" name="title" placeholder="Title...">
+            <input class="input" type="text" name="description" placeholder="About...">
+        </div>
+        <button class="button-add" type="submit">
+            <img src="svg/plus.svg" alt="Plus Icon">
+        </button>
+    </form>
+</header>
+<main class="tasks">
+    <p class="tasks__empty">No tasks</p>
+    <ul class="tasks__list"></ul>
+</main>
+<template id="task-template">
+    <li class="task">
+        <div class="task__content">
+            <div class="text__area">
+                <p class="text__title">Task Title</p>
+                <p class="text__description">Task body about this task...</p>
+            </div>
+            <button class="button-delete">
+                <img src="svg/cross.svg" alt="Cross Icon">
+            </button>
+        </div>
+        <div class="task__tools hidden">
+            <button class="button-share">
+                <img src="svg/Share.svg" alt="Share Icon">
+            </button>
+            <button class="button-info">i</button>
+            <button class="button-edit">
+                <img src="svg/Edit.svg" alt="Pencil Icon">
+            </button>
+        </div>
+    </li>
+</template>
+<div class="alert hidden">
+    <div class="alert__content">
+        <p class="alert__text">Delete this task?</p>
+        <div class="alert__buttons">
+            <button class="button-confirm" type="submit">Yes</button>
+            <button class="button-cancel">No</button>
+        </div>
+    </div>
+</div>
+<div class="edit-window hidden">
+    <div class="edit-window__content">
+        <div class="edit-window__inputs">
+            <input class="input" type="text" name="new-title" placeholder="Mini input...">
+            <textarea class="textarea" type="text" name="new-description" placeholder="Max input..."></textarea>
+        </div>
+        <div class="edit-window__buttons">
+            <button class="button-cancel">Cancel</button>
+            <button class="button-confirm" type="submit">Save</button>
+        </div>
+    </div>
+</div>
+<div class="share-box hidden">
+    <div class="share-box__content">
+        <button class="button-copy">
+            <img src="svg/Content%20copy.svg" alt="Copy Icon">
+        </button>
+        <button class="button-vk">
+            <img src="svg/vk-svgrepo-com%201.svg" alt="VK Icon">
+        </button>
+        <button class="button-telegram">
+            <img src="svg/telegram-svgrepo-com%201.svg" alt="Telegram Icon">
+        </button>
+        <button class="button-whatsapp">
+            <img src="svg/whatsapp-svgrepo-com%20(1)%201.svg" alt="Whatsapp Icon">
+        </button>
+        <button class="button-facebook">
+            <img src="svg/facebook-alt-svgrepo-com%201.svg" alt="Facebook Icon">
+        </button>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
